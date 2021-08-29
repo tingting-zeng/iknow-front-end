@@ -8,7 +8,8 @@ import store from './store'
 if (process.env.NODE_ENV === 'production') {
   axios.defaults.baseURL = 'https://www.madblog.ga:5000';
 } else {
-  axios.defaults.baseURL = 'http://127.0.0.1:5000';
+  // axios.defaults.baseURL = 'http://127.0.0.1:5000';
+  axios.defaults.baseURL = 'http://0.0.0.0:5000';
 }
 // axios.defaults.baseURL = 'http://127.0.0.1:5000'
 // axios.defaults.timeout = 5000  // 超时时间（毫秒）
